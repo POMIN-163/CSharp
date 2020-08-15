@@ -21,7 +21,6 @@ namespace Class // class'name (default is same with file)
             // create a object in DLL's types to use its method
             Console.WriteLine(a.ADD(11, 11).ToString());
         }
-
         /** use a DLL which can't look its class and function **/
         [System.Runtime.InteropServices.DllImport("DLL_extern.dll", CharSet = System.Runtime.InteropServices.CharSet.Ansi)]
         public static extern string DLL_internal_fun();
