@@ -5,7 +5,6 @@ using System.Windows.Forms;
 
 namespace Class // class'name (default is same with file)
 {
-
     class Program
     {
         static void Main(string[] args)

@@ -36,9 +36,6 @@
     <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DLL">
-      <HintPath>..\DLL\DLL\bin\Debug\DLL.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
@@ -51,6 +48,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="DLL_extern_Cs.csproj">
+      <Project>{644e30d4-22bc-49d3-a236-7750968bc607}</Project>
+      <Name>DLL_extern_Cs</Name>
+    </ProjectReference>
+    <ProjectReference Include="extern DLL\DLL_extern_Cpp\Dll1\Dll1.vcxproj">
+      <Project>{50ae53ce-6343-46a4-ab28-e0e506618d52}</Project>
+      <Name>DLL_extern_Cpp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
