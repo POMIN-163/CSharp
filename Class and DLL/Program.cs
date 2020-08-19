@@ -1,9 +1,11 @@
 ﻿using System;
 using DLL;
+using System.Windows.Forms;
 // use a DLL which can look its class and function need "using"
 
 namespace Class // class'name (default is same with file)
 {
+
     class Program
     {
         static void Main(string[] args)
@@ -23,6 +25,8 @@ namespace Class // class'name (default is same with file)
             Console.WriteLine("E's result：1 + 3 = " + DLL_extern.DLL_internal_fun_e(1, 3).ToString());
             Console.WriteLine("C#'s result：1 + 3 = " + DLL_extern_object.ADD(1, 3).ToString());
             Console.WriteLine("C++'s result：1 + 3 = " + DLL_extern.DLL_internal_fun_Cpp(1, 3).ToString());
+            Form form = new Form();
+            form.ShowDialog();
         }
     }
     class DLL_extern
