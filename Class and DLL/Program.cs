@@ -26,9 +26,8 @@ namespace Class // class'name (default is same with file)
             Console.WriteLine("C++'s result：1 + 3 = " + DLL_extern.DLL_internal_fun_Cpp(1, 3).ToString());
             Form form = new Form();
             form.ShowDialog();
-
         }
-    }
+    } 
     class DLL_extern
     {
         /** use a DLL which can't look its class and function **/
