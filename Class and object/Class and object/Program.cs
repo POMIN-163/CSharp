@@ -73,6 +73,8 @@ namespace Class_and_object
             }
             return result;
         }
+
+       
         public int Sum_2(int min,int max)// 递归求和
         {
             if (max == min)
