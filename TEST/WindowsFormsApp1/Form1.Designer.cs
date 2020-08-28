@@ -1,4 +1,4 @@
-﻿namespace App2
+﻿namespace WindowsFormsApp1
 {
     partial class Form1
     {
@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 351);
+            this.ClientSize = new System.Drawing.Size(618, 344);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
