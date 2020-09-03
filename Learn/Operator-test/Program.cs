@@ -7,8 +7,8 @@ namespace Operator_test
     {
         private static void Main(string[] args)
         {
-            People one = new People("pomin-1", 19);
-            People two = new People("pomin-2", 20);
+            People one = new People("POMIN-1", 19);
+            People two = new People("POMIN-2", 20);
 
             List<People> list = People.AddMember(one, two);
             Console.WriteLine("test 1::");
@@ -22,6 +22,8 @@ namespace Operator_test
             {
                 Console.WriteLine("\n name:" + p.name + "\n age:" + p.age);
             }
+
+            Console.WriteLine("{0}", 1515, 1522);
         }
     }
 
@@ -46,7 +48,7 @@ namespace Operator_test
 
             return people;
         }
-
+        // 操作符重载
         public static List<People> operator ^(People p1, People p2)
         {
             List<People> people = new List<People>
@@ -56,6 +58,15 @@ namespace Operator_test
             };
 
             return people;
+        }
+    }
+    
+    class Dic
+    {
+        public Dictionary<string, int> keyValuePairs = new Dictionary<string, int>();
+        public void Dic_fun()
+        {
+            keyValuePairs.Add("POMIN", 19);
         }
     }
 }

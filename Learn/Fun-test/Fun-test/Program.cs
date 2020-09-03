@@ -23,6 +23,10 @@ namespace Fun_test
     class Student
     {
         /***构造函数(初始化函数)***/
+        static Student()// 创建时调用一次，且仅一次
+        {
+
+        }
         public Student()// 构造函数, 相当于 init (初始化实例)
         {
             age = 0;
