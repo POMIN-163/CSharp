@@ -8,13 +8,12 @@
         Title="MainWindow" Height="450" Width="800" Foreground="#FF694F4F">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black" Offset="0"/>
-            <GradientStop Color="#FFEBD2D2" Offset="1"/>
+            <GradientStop Color="Black" Offset="0" />
+            <GradientStop Color="#FFEBD2D2" Offset="1" />
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="51" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="774"/>
-        <Button x:Name="Click" Content="Click" HorizontalAlignment="Left" Height="46" Margin="10,83,0,0" VerticalAlignment="Top" Width="774" Click="Button_Click"/>
-
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="51" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="774" />
+        <Button x:Name="Click" Content="Click" HorizontalAlignment="Left" Height="46" Margin="10,83,0,0" VerticalAlignment="Top" Width="774" Click="Button_Click" />
     </Grid>
 </Window>

@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Important
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+namespace Important {
+
+    internal class Program {
+
+        private static void Main(string[] args) {
             int x = 103;
             {// 内部的 { } 不能在类、接口、结构中使用
                 int y = 1001; // y 的作用域只在 { } 里面
@@ -24,38 +20,35 @@ namespace Important
             Test.Test_Foreach();
         }
     }
-    class Test
-    {
+
+    internal class Test {
+
         public static void Test_IEnumerator()// 迭代器
         {
             List<int> list = new List<int>() { 1, 2, 5, 8, 44 };
             IEnumerator enum1 = list.GetEnumerator();
-            while (enum1.MoveNext())
-            {
+            while (enum1.MoveNext()) {
                 Console.WriteLine(enum1.Current);
             }
             enum1.Reset();
-            while (enum1.MoveNext())
-            {
+            while (enum1.MoveNext()) {
                 Console.WriteLine(enum1.Current);
             }
         }
-        public static void Test_Foreach()
-        {
+
+        public static void Test_Foreach() {
             List<int> list = new List<int>() { 1, 2, 5, 8, 44 };
-            foreach (var item in list)
-            {
+            foreach (var item in list) {
                 Console.WriteLine(item);
             }
         }
     }
-    class TestClass
-    {
+
+    internal class TestClass {
         public int a = 0, b = 0;
-        public static void AAA()
-        {         
-            try
-            {
+
+        public static void AAA() {
+            try {
                 int aa = int.Parse("99999999999999999");
                 Console.WriteLine("OK");
             }
@@ -66,11 +59,10 @@ namespace Important
             catch (System.Exception ex)// 捕捉全部错误，要放在最后
             {
                 Console.WriteLine(ex);
-                Console.WriteLine(ex.Message);   
+                Console.WriteLine(ex.Message);
                 Console.WriteLine("ERROR");
             }
-            finally
-            {
+            finally {
                 Console.WriteLine("END");// 必定执行语句
             }
         }

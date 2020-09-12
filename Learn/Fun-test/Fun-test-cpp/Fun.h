@@ -9,7 +9,7 @@ public:
 };
 class Class_test
 {
-public: 
+public:
     const char* name;
     // ¹¹Ôìº¯Êı
     Class_test(int age, const char* name) {
@@ -21,4 +21,3 @@ public:
 private:
     int age;
 };
-

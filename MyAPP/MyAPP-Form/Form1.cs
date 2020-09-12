@@ -19,6 +19,9 @@ namespace MyAPP_Form
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Click += Form1_Click;
+            this.listBox1.Click += ListBox1_Click;
+            this.listBox1.Click += Form1_Click;
             listBox1.AllowDrop = true;
             Button a = new Button();
             List<string> b = new List<string>();
@@ -28,6 +31,16 @@ namespace MyAPP_Form
 
             listBox1.DataSource = b;
 
+        }
+
+        private void ListBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("1");
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("2");
         }
     }
 }

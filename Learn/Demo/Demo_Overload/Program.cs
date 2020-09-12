@@ -1,11 +1,10 @@
 ﻿using System;
 
-namespace Demo_Overload
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+namespace Demo_Overload {
+
+    internal class Program {
+
+        private static void Main(string[] args) {
             Overload_Fun Test1 = new Overload_Fun(19, "POMIN");
             Overload_Fun Test2 = new Overload_Fun("POMIN");
             Overload_Fun Test3 = new Overload_Fun(19);
@@ -17,9 +16,10 @@ namespace Demo_Overload
             Console.WriteLine(Test4 ^ Test5);
         }
     }
+
     #region 方法重载
-    class Overload_Fun
-    {
+
+    internal class Overload_Fun {
         /*
         * 类名：Overload_Fun
         * 主方法：Overload_Fun()
@@ -28,25 +28,26 @@ namespace Demo_Overload
         */
         public int var1;
         public string var2;
-        public Overload_Fun(int var1_, string var2_)
-        {
+
+        public Overload_Fun(int var1_, string var2_) {
             var1 = var1_;
             var2 = var2_;
         }
-        public Overload_Fun(string var2_)
-        {
+
+        public Overload_Fun(string var2_) {
             var2 = var2_;
         }
-        public Overload_Fun(int var1_)
-        {
+
+        public Overload_Fun(int var1_) {
             var1 = var1_;
         }
     }
-    #endregion
+
+    #endregion 方法重载
 
     #region 操作符重载
-    class Overload_Operator
-    {
+
+    internal class Overload_Operator {
         /*
         * 类名：Overload_Operator
         * 主方法： ^
@@ -55,11 +56,13 @@ namespace Demo_Overload
         */
         public int var1 = 0;
         public int var2 = 0;
-        public static int operator ^ (Overload_Operator a, Overload_Operator b)
+
+        public static int operator ^(Overload_Operator a, Overload_Operator b)
         // 参数中至少有一个是本类的对象
         {
             return a.var1 + b.var2;
         }
     }
-    #endregion
+
+    #endregion 操作符重载
 }
