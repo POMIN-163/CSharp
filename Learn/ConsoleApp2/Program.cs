@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp2 {
+namespace Delegate_Test {
 
     internal class Program {
 
@@ -8,9 +8,9 @@ namespace ConsoleApp2 {
             Func<int, int, int> Calc_ADD = new Func<int, int, int>(Func_Fun.ADD);
             Func<int, int, int> Calc_SUB = new Func<int, int, int>(Func_Fun.SUB);
             Func<int, int, int> Calc_MUL = new Func<int, int, int>(Func_Fun.MUL);
-            Func<int, int, int> Calc_DIV = new Func<int, int, int>(Func_Fun.DIV);
+            Func<int, int, int> Calc_DIV = new Func<int, int, int>(Func_Fun.DIV);// 委托、函数封装
 
-            Console.WriteLine("ADD:" + Calc_ADD(1, 5));
+            Console.WriteLine("ADD result:" + Calc_ADD(1, 5));
 
             Action action = new Action(Action_Fun.Action_1);
             action += Action_Fun.Action_2;
@@ -21,11 +21,6 @@ namespace ConsoleApp2 {
     }
 
     internal class Func_Fun {
-        /*
-                public static void CW()
-                {
-                    Console.WriteLine("CW");
-                }*/
 
         public static int ADD(int a, int b) => a + b;
 

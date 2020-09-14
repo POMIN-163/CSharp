@@ -2,9 +2,7 @@
 using System.Windows.Forms;
 
 namespace type_test {
-
     internal class Program {
-
         private static void Main(string[] args) {
             Console.WriteLine("Size:::" +
                               "\n byte:" + sizeof(byte) +
@@ -45,7 +43,6 @@ namespace type_test {
             while (true) {
             }
         }
-
         private class Student {
             public static int Amount;// 静态成员, 隶属于类, 不隶属于类的实例
             public int Age;

@@ -1,9 +1,7 @@
 ﻿using System;
 
 namespace Demo_Overload {
-
     internal class Program {
-
         private static void Main(string[] args) {
             Overload_Fun Test1 = new Overload_Fun(19, "POMIN");
             Overload_Fun Test2 = new Overload_Fun("POMIN");

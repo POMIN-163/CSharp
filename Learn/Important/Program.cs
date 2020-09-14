@@ -3,9 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace Important {
-
     internal class Program {
-
         private static void Main(string[] args) {
             int x = 103;
             {// 内部的 { } 不能在类、接口、结构中使用
@@ -20,9 +18,7 @@ namespace Important {
             Test.Test_Foreach();
         }
     }
-
     internal class Test {
-
         public static void Test_IEnumerator()// 迭代器
         {
             List<int> list = new List<int>() { 1, 2, 5, 8, 44 };
@@ -35,7 +31,6 @@ namespace Important {
                 Console.WriteLine(enum1.Current);
             }
         }
-
         public static void Test_Foreach() {
             List<int> list = new List<int>() { 1, 2, 5, 8, 44 };
             foreach (var item in list) {
@@ -43,7 +38,6 @@ namespace Important {
             }
         }
     }
-
     internal class TestClass {
         public int a = 0, b = 0;
 

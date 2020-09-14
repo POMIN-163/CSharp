@@ -2,11 +2,11 @@
 using System.Runtime.InteropServices;
 
 // 有关程序集的一般信息由以下 控制。更改这些特性值可修改 与程序集关联的信息。
-[assembly: AssemblyTitle("Important")]
+[assembly: AssemblyTitle("Calc-questions")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Important")]
+[assembly: AssemblyProduct("Calc-questions")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("c572c586-7f9a-40da-a562-4534d880dd54")]
+[assembly: Guid("54669a5a-66b4-4303-8a1f-bb33601f931e")]
 
 // 程序集的版本信息由下列四个值组成:
 //

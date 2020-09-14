@@ -41,13 +41,13 @@ namespace Demo_Dictionary_and_list {
             // 配置 “键值对成员”
             Dictionary<string, Obj> Dir_obj = new Dictionary<string, Obj>();
             // 批量加入成员
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 5; i++) {
                 Obj temp = new Obj("Dir_POMIN - ", i);
                 Dir_obj.Add("第" + i.ToString() + "位成员：", temp);
             }
             // 类似数组方式的成员访问（可以索引，如果没有指定成员会报错）
             Console.WriteLine("[]方式访问：：");
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 5; i++) {
                 Console.WriteLine(
                     "第" + i + "位成员：" +
                     Dir_obj["第" + i + "位成员："].name +
@@ -55,6 +55,7 @@ namespace Demo_Dictionary_and_list {
             }
             // "."操作符方式的成员访问
             Console.WriteLine(" . 方式访问：：");
+            Console.WriteLine("Foreach:\n");
             foreach (var a in Dir_obj) {
                 Console.WriteLine(
                     a.Key +
@@ -78,12 +79,16 @@ namespace Demo_Dictionary_and_list {
 
         public static void ListTest() {
             List<Obj> List_obj = new List<Obj>();
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 5; i++) {
                 Obj temp = new Obj("List_POMIN - ", i);
                 List_obj.Add(temp);
             }
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 5; i++) {
                 Console.WriteLine("第" + i + "个成员：" + List_obj[i].name + List_obj[i].age);
+            }
+            Console.WriteLine("Foreach:\n");
+            foreach (var p in List_obj) {
+                Console.WriteLine(p.name + p.age);
             }
         }
     }
