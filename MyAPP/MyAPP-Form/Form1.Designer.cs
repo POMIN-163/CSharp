@@ -50,7 +50,7 @@
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2});
-            this.listView1.Location = new System.Drawing.Point(385, 23);
+            this.listView1.Location = new System.Drawing.Point(428, 23);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(274, 353);
             this.listView1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 507);
+            this.ClientSize = new System.Drawing.Size(718, 395);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
