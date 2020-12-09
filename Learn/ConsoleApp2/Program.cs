@@ -9,7 +9,6 @@ namespace Delegate_Test {
             Func<int, int, int> Calc_SUB = new Func<int, int, int>(Func_Fun.SUB);
             Func<int, int, int> Calc_MUL = new Func<int, int, int>(Func_Fun.MUL);
             Func<int, int, int> Calc_DIV = new Func<int, int, int>(Func_Fun.DIV);// 委托、函数封装
-
             Console.WriteLine("ADD result:" + Calc_ADD(1, 5));
 
             Action action = new Action(Action_Fun.Action_1);

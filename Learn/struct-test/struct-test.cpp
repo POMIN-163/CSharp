@@ -4,7 +4,7 @@ typedef struct{
 	int var1;
 	char var2;
 }Struct;
-
+// TODO
 Struct * _global;
 
 void Fun(Struct * tmp) {
